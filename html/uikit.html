@@ -35,7 +35,7 @@ $endif$
         <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
         <style type="text/css">code{white-space: pre;}</style>
         $if(quotes)$
-        <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+        <style type="text/css">q { quotes: """ """ "'" "'"; }</style>
         $endif$
         $if(highlighting-css)$
         <style type="text/css">
@@ -50,7 +50,36 @@ $endif$
               $endif$
               $for(header-includes)$
               $header-includes$
-              $endfor$   
+        $endfor$
+        <link rel="stylesheet"
+                             href="https://fonts.googleapis.com/css?family=Inter%7CRoboto+Mono">
+        <style>
+         body {
+             font-family: Inter, Aptos, sans-serif;
+             font-size: 21px;
+         }
+         .sourceCode {
+             font-family: 'Roboto Mono', 'Andale Mono', monospace;
+             font-size: 18px;
+         }
+
+         p > code {
+             font-family: 'Roboto Mono', 'Andale Mono', monospace;
+             color: brown;
+             font-size: 18px;
+         }
+
+         p {
+             line-height: 1.7;
+         }
+
+         li {
+             margin-top: 10px;
+             margin-bottom: 10px;
+         }
+
+
+        </style>
     </head>
 
     <body>
